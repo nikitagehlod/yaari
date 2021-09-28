@@ -1,0 +1,62 @@
+
+
+Sat Sep 25 13:24:09 2021
+Command line: TestDisk
+
+TestDisk 7.1, Data Recovery Utility, July 2019
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Linux, kernel 5.11.0-34-generic (#36~20.04.1-Ubuntu SMP Fri Aug 27 08:06:32 UTC 2021) x86_64
+Compiler: GCC 9.2
+ext2fs lib: 1.45.5, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.1
+User is not root!
+Hard disk list
+
+
+TestDisk exited normally.
+Using locale 'en_IN'.
+
+
+Sat Sep 25 13:24:09 2021
+Command line: TestDisk /debug
+
+TestDisk 7.1, Data Recovery Utility, July 2019
+Christophe GRENIER <grenier@cgsecurity.org>
+https://www.cgsecurity.org
+OS: Linux, kernel 5.11.0-34-generic (#36~20.04.1-Ubuntu SMP Fri Aug 27 08:06:32 UTC 2021) x86_64
+Compiler: GCC 9.2
+ext2fs lib: 1.45.5, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.1
+/dev/sda: LBA, LBA48 support
+/dev/sda: size       234441648 sectors
+/dev/sda: user_max   234441648 sectors
+/dev/sdb: LBA, LBA48 support
+/dev/sdb: size       1953525168 sectors
+/dev/sdb: user_max   1953525168 sectors
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Warning: can't get size for Disk /dev/loop13 - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/sda - 120 GB / 111 GiB - CHS 14593 255 63, sector size=512 - 120GB SSD, S/N:LFJ306R002859, FW:SN05999
+Disk /dev/sdb - 1000 GB / 931 GiB - CHS 121601 255 63, sector size=512 - ST1000LM035-1RK172, S/N:WL1R43KY, FW:RSM7
+Disk /dev/loop0 - 104 MB / 99 MiB - 203456 sectors (RO), sector size=512
+Disk /dev/loop1 - 218 MB / 208 MiB - 426840 sectors (RO), sector size=512
+Disk /dev/loop10 - 4096 B - 8 sectors (RO), sector size=512
+Disk /dev/loop11 - 68 MB / 65 MiB - 133552 sectors (RO), sector size=512
+Disk /dev/loop12 - 33 MB / 32 MiB - 66168 sectors (RO), sector size=512
+Disk /dev/loop2 - 58 MB / 55 MiB - 113536 sectors (RO), sector size=512
+Disk /dev/loop3 - 172 MB / 164 MiB - 337424 sectors (RO), sector size=512
+Disk /dev/loop4 - 229 MB / 219 MiB - 448512 sectors (RO), sector size=512
+Disk /dev/loop5 - 145 MB / 139 MiB - 284856 sectors (RO), sector size=512
+Disk /dev/loop6 - 53 MB / 50 MiB - 104360 sectors (RO), sector size=512
+Disk /dev/loop7 - 68 MB / 65 MiB - 133320 sectors (RO), sector size=512
+Disk /dev/loop8 - 218 MB / 208 MiB - 426848 sectors (RO), sector size=512
+Disk /dev/loop9 - 33 MB / 32 MiB - 66152 sectors (RO), sector size=512
+
+Partition table type (auto): EFI GPT
+Disk /dev/sda - 120 GB / 111 GiB - 120GB SSD
+Partition table type: Intel
+
+Interface Advanced
+Geometry from i386 MBR: head=256 sector=63
+check_part_i386 1 type EE: no test
+ 1 P EFI GPT                  0   0  2 14593  80 63  234441647
+SIGHUP detected! TestDisk has been killed.

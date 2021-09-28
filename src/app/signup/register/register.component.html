@@ -1,0 +1,401 @@
+<!-- <p>register works!</p> -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- logo -->
+    <!-- <link rel="icon" type="image/png" href="images/fav_icon.png"/> -->
+
+    <title>Yaari</title>
+
+    <!-- Material Icons -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+
+    <!-- ///// Owl Slider Css ///// -->
+    <!-- <link rel="stylesheet" href="assets/css/owl.carousel.min.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"> -->
+    
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+
+    <!-- Style CSS -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+
+  </head>
+<body>
+
+<app-topbar></app-topbar>
+<app-nav></app-nav>
+
+
+<!-- Breadcrumb section -->
+
+<div class="jumbotron jumbotron-fluid breadcrumb_jumbo_custom">
+  <div class="container text-center">
+    <h1 class="text-dark font-500 mb-0">
+      Create Your Account
+    </h1>
+    <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+      <ol class="breadcrumb mb-0 bg-transparent">
+        <li class="breadcrumb-item">
+          <a href="#" class="text-gray font-400 text-font-18">Home</a>
+        </li>
+        <li class="breadcrumb-item active text-gray font-400 text-font-18" aria-current="page">
+          Create Account
+        </li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<!-- Breadcrumb End -->
+
+<!-- Sign In section -->
+
+<section class="sing_in_sec">
+  <div class="container-fluid">
+    <div class="row mx-0 px-5">
+      <div class="col-lg-6 col-md-10 col-sm-12 mx-auto">
+        <form class="custom_form" [formGroup]="create_account">
+          <div class="form-row">
+            <div class="form-group col-md-12 mb-4">
+              <input type="text" class="form-control" placeholder="First Name" formControlName="firstName">
+            </div>
+            <div class="form-group col-md-12 mb-4">
+              <input type="text" class="form-control" placeholder="Last Name" formControlName="lastName">
+            </div>
+            <div class="form-group col-md-12 mb-4">
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Email" formControlName="email">
+            </div>
+            <div class="form-group col-md-12 mb-4">
+              <input type="text" class="form-control" id="inputMobile" placeholder="Mobile" formControlName="mobile">
+              
+            </div>
+            <div class="form-group col-md-12 mb-4">
+              <input type="password" class="form-control" id="inputPassword4" placeholder=" Password" formControlName="password">
+              <span class="material-icons pass_hide_icons">visibility</span>
+            </div>
+            <!-- <div class="form-group col-md-12 mb-4 text-center py-1">
+              <a href="javaScript:void(0)" class="text-dark font-500 font-18">
+                Forgot your password ?
+              </a>
+            </div> -->
+          </div>
+          <button type="submit" (click)="signup(create_account.value)"class="btn btn-theme font-18 w-100 py-4 mt-2">Create account</button>
+        </form>
+        <div class="d-inline-block w-100 text-center mt-4 mb-2">
+          <span class="text-dark font-400 font-18 mr-1">
+            Already have account?
+          </span>
+          <a href="javaScript:void(0)" class="text-dark font-400 font-18" style="text-decoration: underline;">
+            Try signing in
+          </a>
+        </div>
+        <div class="d-inline-block w-100 text-center my-3">
+          <a href="javaScript:void(0)" class="text-dark font-500 font-18">
+            Return to store
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sign In section End -->
+
+<!-- Social Icons -->
+<!-- 
+<section class="social_icons_sec mb-5 pb-0">
+  <div class="row mx-0">
+    <div class="col-lg-12 text-center">
+      <ul class="p-0 m-0 d-inline-block" style="list-style-type:none;">
+        <li class="float-left px-3">
+          <a href="javaScript:void(0)">
+            <img src="images/fb_icon.svg" width="26" height="26">
+          </a>
+        </li>
+        <li class="float-left px-3">
+          <a href="javaScript:void(0)">
+            <img src="images/twitter_icon.svg" width="26" height="26">
+          </a>
+        </li>
+        <li class="float-left px-3">
+          <a href="javaScript:void(0)">
+            <img src="images/insta_icon.svg" width="26" height="26">
+          </a>
+        </li>
+        <li class="float-left px-3">
+          <a href="javaScript:void(0)">
+            <img src="images/youtube_icon.svg" width="26" height="26">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section> -->
+
+<!-- Social Icons End -->
+
+<!-- Footer -->
+<!-- 
+<footer class="footer_main">
+  <div class="container-fluid">
+    <div class="row px-5">
+      <div class="col-lg-3">
+        <h4 class="text-dark font-500 d-inline-block mb-5 w-100">
+          Contact us
+        </h4>
+        <div class="footer_contact_det position-relative w-100 mb-3 d-inline-block">
+          <span class="footer_contact_det_icons">
+            <img class="img-fluid" src="images/ft_home.svg" width="22" height="22">
+          </span>
+          <span class="d-block float-left w-75 text-gray font-18 pl-4 ml-2">
+            One International Center, 4th Floor, Tower 1, Senapati Bapat Marg, Dadar West, Prabhadevi,
+            <br>
+            <br>
+            Mumbai Maharashtra - 400013  
+          </span>
+        </div>
+        <div class="footer_contact_det position-relative w-100 mb-3 d-inline-block">
+          <span class="footer_contact_det_icons">
+            <img class="img-fluid" src="images/ft_call.svg" width="22" height="22">
+          </span>
+          <span class="d-block float-left text-gray font-18 pl-4 ml-2">
+            +91-9152 990 990
+          </span>
+        </div>
+        <div class="footer_contact_det position-relative w-100 mb-3 d-inline-block">
+          <span class="footer_contact_det_icons">
+            <img class="img-fluid" src="images/ft_mail.svg" width="22" height="22">
+          </span>
+          <span class="d-block float-left text-gray font-18 pl-4 ml-2">
+            helpme@yaari.com
+          </span>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <h4 class="text-dark font-500 d-inline-block mb-5 w-100">
+          Help
+        </h4>
+        <ul class="p-0 m-0 d-inline-block" style="list-style-type:none;">
+          <li class="mb-3">
+            <a href="javaScript:void(0)" class="font-18 text-gray">
+              Search
+            </a>
+          </li>
+          <li class="mb-3">
+            <a href="javaScript:void(0)" class="font-18 text-gray">
+              Help
+            </a>
+          </li>
+          <li class="mb-3">
+            <a href="javaScript:void(0)" class="font-18 text-gray">
+              Information
+            </a>
+          </li>
+          <li class="mb-3">
+            <a href="javaScript:void(0)" class="font-18 text-gray">
+              Privacy Policy
+            </a>
+          </li>
+          <li class="mb-3">
+            <a href="javaScript:void(0)" class="font-18 text-gray">
+              Shipping Details
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h4 class="text-dark font-500 d-inline-block mb-5 w-100">
+          Support
+        </h4>
+        <ul class="p-0 m-0 d-inline-block" style="list-style-type:none;">
+          <li class="mb-3">
+            <a href="javaScript:void(0)" class="font-18 text-gray">
+              Contact Us
+            </a>
+          </li>
+          <li class="mb-3">
+            <a href="javaScript:void(0)" class="font-18 text-gray">
+              About Us
+            </a>
+          </li>
+          <li class="mb-3">
+            <a href="javaScript:void(0)" class="font-18 text-gray">
+              Careers
+            </a>
+          </li>
+          <li class="mb-3">
+            <a href="javaScript:void(0)" class="font-18 text-gray">
+              Refund & Returns
+            </a>
+          </li>
+          <li class="mb-3">
+            <a href="javaScript:void(0)" class="font-18 text-gray">
+              Deliveries
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h4 class="text-dark font-500 d-inline-block mb-5 w-100">
+          Information
+        </h4>
+        <ul class="p-0 m-0 d-inline-block" style="list-style-type:none;">
+          <li class="mb-3">
+            <a href="javaScript:void(0)" class="font-18 text-gray">
+              Search Teams
+            </a>
+          </li>
+          <li class="mb-3">
+            <a href="javaScript:void(0)" class="font-18 text-gray">
+              Advance Search
+            </a>
+          </li>
+          <li class="mb-3">
+            <a href="javaScript:void(0)" class="font-18 text-gray">
+              Help & FAQ's
+            </a>
+          </li>
+          <li class="mb-3">
+            <a href="javaScript:void(0)" class="font-18 text-gray">
+              Orders & Returns
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer> -->
+
+<!-- Footer End -->
+
+<!-- Other Links -->
+<!-- 
+<section class="social_icons_sec py-4">
+  <div class="row mx-0">
+    <div class="col-lg-12 text-center">
+      <ul class="p-0 m-0 d-inline-block" style="list-style-type:none;">
+        <li class="float-left px-4">
+          <a href="javaScript:void(0)" class="font-18 text-gray">
+            Search
+          </a>
+        </li>
+        <li class="float-left px-4">
+          <a href="javaScript:void(0)" class="font-18 text-gray">
+            Help
+          </a>
+        </li>
+        <li class="float-left px-4">
+          <a href="javaScript:void(0)" class="font-18 text-gray">
+            Information
+          </a>
+        </li>
+        <li class="float-left px-4">
+          <a href="javaScript:void(0)" class="font-18 text-gray">
+            Privacy Policy
+          </a>
+        </li>
+        <li class="float-left px-4">
+          <a href="javaScript:void(0)" class="font-18 text-gray">
+            Shipping Details
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section> -->
+
+<!-- Other Links End -->
+
+<!-- Blank -->
+<!-- <div class="w-100 d-flex py-4" style="background: #363636;"></div> -->
+<!-- Blank -->
+
+
+
+</body>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- <script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script> -->
+
+<!-- ////////// Owl Slider JS ////// -->
+<!-- <script src="assets/js/owl.carousel.min.js"></script>
+
+<script>
+     
+////  Header Banners OWL
+
+$('.owl-carousel-header-banners').owlCarousel({
+  loop:true,
+  margin:0,
+  nav:false,
+  responsive:{
+    0:{
+        items:1
+    },
+    600:{
+        items:1
+    },
+    1000:{
+        items:1
+    }
+  }
+});
+    
+////  Blog list OWL
+
+$('.owl-carousel-blog-list').owlCarousel({
+  loop:true,
+  margin:30,
+  nav:false,
+  responsive:{
+    0:{
+        items:1
+    },
+    600:{
+        items:2
+    },
+    1000:{
+        items:3
+    }
+  }
+});
+
+// Mega Menu
+
+$(document).ready(function() {
+  "use strict";
+  $('.menu > ul > li:has( > ul)').addClass('menu-dropdown-icon');
+  $('.menu > ul > li > ul:not(:has(ul))').addClass('normal-sub');
+  $(".menu > ul").before("<a href=\"#\" class=\"menu-mobile\">&nbsp;</a>");
+  $(".menu > ul > li").hover(function(e) {
+    if ($(window).width() > 943) {
+      $(this).children("ul").stop(true, false).fadeToggle(150);
+      e.preventDefault();
+    }
+  });
+  $(".menu > ul > li").click(function() {
+    if ($(window).width() <= 943) {
+      $(this).children("ul").fadeToggle(150);
+    }
+  });
+  $(".menu-mobile").click(function(e) {
+    $(".menu > ul").toggleClass('show-on-mobile');
+    e.preventDefault();
+  });
+});
+$(window).resize(function() {
+  $(".menu > ul > li").children("ul").hide();
+  $(".menu > ul").removeClass('show-on-mobile');
+});
+
+</script>  -->
+
+</html>
